@@ -4,8 +4,7 @@ include('header.php');
 include('helpers.php');
 ob_start();
    include ('db_con.php');
-   //query 
-   //users
+  
    $user = "SELECT * FROM user_login";
    $query = mysqli_query($conn ,  $user);
    $users = mysqli_num_rows( $query);

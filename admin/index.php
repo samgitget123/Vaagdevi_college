@@ -73,16 +73,10 @@ ob_start();
                      <td><?= $count++; ?></td>
                      <td><?= $pdf_res['pdf_title'] ?></td>
                      <!----------retriction----------> 
-                     <?php
                     
-                     ?>
                      <td>
-                        <?php
-                        if(is_admin($_SESSION['user_info'][2])){
-
+                        <?php if(is_admin($_SESSION['user_info'][2])) { ?>
                         
-                         
-                        ?>
                         <form class="mt-2" method="POST" onsubmit="return confirm('Are you sure, You Want to delete?')">
                                        <!--hidden input--> 
                                     <input type="hidden" name="id" value="<?= $pdf_res['id'] ?>">
@@ -99,18 +93,12 @@ ob_start();
                      }
                      }
                      }  
-                     
-                    
-                    
-                     
                      else{
                      ?>
                   <tr>
                      <td>No Record Found</td>
                   </tr>
-                  <?php
-                     }
-                     ?>
+                  <?php } ?>
                </tbody>
             </table>
          </div>
