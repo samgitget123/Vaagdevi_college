@@ -1,6 +1,6 @@
 <?php
-    include('common_links.php'); //commmon links included here
-    include('common_header.php'); //common header included here
+    include('common_links.php'); 
+    include('common_header.php'); 
 ?>
 <body class="boddy_bg">
     <!--content--> 
