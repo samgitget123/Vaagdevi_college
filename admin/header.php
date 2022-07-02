@@ -60,13 +60,6 @@ ob_start();
          </li>
          <!-- Divider -->
          <hr class="sidebar-divider">
-
-        <!-- <li class="nav-item">
-            <a class="nav-link" href="pdf_upload.php"> <span>PDF Uploads</span></a>
-         </li>
-         <!-- Divider 
-         <hr class="sidebar-divider">--->
-        
          <!-- Nav Item - Tables -->
          <li class="nav-item">
             <a class="nav-link collapsed" href="users.php"> <span>Users</span> </a>

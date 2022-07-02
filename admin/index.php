@@ -4,7 +4,6 @@ include('header.php');
 include('helpers.php');
 ob_start();
    include ('db_con.php');
-  
    //query 
    $table="SELECT * FROM naac LEFT JOIN upload ON naac.id=upload.id";
    $data = mysqli_query($conn , $table);
@@ -58,17 +57,13 @@ ob_start();
                <tbody>
                   <?php
                      $count=1;
-                    
                          //criteria
                          if($nums){
                             while($tab2=mysqli_fetch_assoc($push)){  
                                 if($pdf){
                                  while($pdf_res=mysqli_fetch_assoc( $pdf_file)){
-
-                                
-                  ?>
-                                
-                           
+        
+                  ?>     
                   <tr>
                      <td><?= $count++; ?></td>
                      <td><?= $pdf_res['pdf_title'] ?></td>
